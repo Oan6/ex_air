@@ -17,4 +17,4 @@ end
 
 if m == 2 && o == 0
 	puts "tout les arguments ont une paire" 
-end
+end 

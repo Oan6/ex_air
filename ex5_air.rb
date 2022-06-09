@@ -14,3 +14,4 @@ for i in  2..@sortie.length-3 #pour enlever le ["     "]
 	print @sortie[i] 
 end 
 
+
