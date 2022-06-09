@@ -18,3 +18,5 @@ for i in 0..b-1
 	d = d+2
 	c = c-1
 end 
+
+
