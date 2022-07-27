@@ -28,12 +28,4 @@ def elimination(array , string)
 end 		 
 
 
-
-
-
-
-
-
-
-
 elimination(c,d)
