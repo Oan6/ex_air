@@ -14,10 +14,11 @@ c = ARGV[longeur-1]
 def add(entier,numerateur)
 	
 	for i in entier
+		
 		@r << i.to_i + numerateur.to_i 
 		
 	end 
-	puts @r
+	print @r
 end 
 
 def sous(entier,numerateur)
@@ -30,13 +31,13 @@ def sous(entier,numerateur)
 end 
 
 
-case c[1]
+case c[0]
 when "+"
-	add(a, c[2] ) 
+	add(a, c[1] ) 
 when "-"
-	sous(a, c[2] ) 
+	sous(a, c[1] ) 
 else 
-	"erreur de signe , seul "+" et "-" sont accepter "
+	puts "erreur de signe , seul + et - sont accepter "
 end 
 
 

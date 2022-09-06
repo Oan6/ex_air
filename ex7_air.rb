@@ -5,7 +5,7 @@ a = ARGV
 b = ARGV.length
 c = ARGV[0..b-2]
 d = ARGV[b-1]
-
+#l16 erreur mais l'algo marche quand meme 
 #probleme avec les maj j'arrive pas a downcase 
 def elimination(array , string)
 	for i in 0..array.length 

@@ -14,8 +14,7 @@ end
 
 b = a[0..d-1]
 c = a[d+1..a.length]
-puts b 
-puts c 
+
 
 def fusion(array1 , array2)
 	e = 0

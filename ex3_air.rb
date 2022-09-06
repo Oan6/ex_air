@@ -8,7 +8,7 @@ c = ARGV[0..b-2]
 d = ARGV[b-1]
 
 def concat(array , separateur)
-	for i in 0..array.length
+	for i in 0..array.length-1
 		print array[i]
 		print separateur
 	end 
