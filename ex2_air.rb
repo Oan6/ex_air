@@ -1,9 +1,41 @@
 #Créez un programme qui découpe une chaîne de caractères en tableau 
 #en fonction du séparateur donné en 2e argument.
 
+#def split(string_à_couper, string_séparateur)
+	#for i in 0..string_à_couper.length
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+=begin 
 def split(string_à_couper, string_séparateur)
 	for i in 0..string_à_couper.length
 		if string_à_couper[i].to_s + string_à_couper[i+1].to_s == string_séparateur || string_à_couper[i-1].to_s + string_à_couper[i].to_s == string_séparateur
@@ -19,28 +51,7 @@ end
 
 split(ARGV[0],ARGV[1] )
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+=end 
 
 
 
@@ -53,12 +64,15 @@ if string_à_couper[i].to_s + string_à_couper[i+1].to_s == string_séparateur |
 		end  
 
 
-
+=end 
 # le faire en mot 
+a = ARGV[0]
+b = ARGV[1]
 def splite(string_à_couper, string_séparateur)
-
+t = 0
 	for i in 0..string_à_couper.length
-		print string_à_couper[i]
+		
+		print string_à_couper[i+t]
 
 		if string_à_couper[i+1] == string_séparateur[0]
 			m = 0 
@@ -73,7 +87,8 @@ def splite(string_à_couper, string_séparateur)
 
 		if m == string_séparateur.length 
 			m = 0 
-			puts " "
+			puts "" 
+			t = t + string_séparateur.length
 		end 
 
 
@@ -83,4 +98,3 @@ end
 
 
 splite(a , b)
-=end 
