@@ -18,7 +18,10 @@ def add(entier,numerateur)
 		@r << i.to_i + numerateur.to_i 
 		
 	end 
-	print @r
+	for i in 0..@r.length
+		print @r[i] 
+		print " "
+	end 
 end 
 
 def sous(entier,numerateur)
@@ -27,7 +30,10 @@ def sous(entier,numerateur)
 		@re << i.to_i - numerateur.to_i 
 		
 	end 
-	puts @re
+	for i in 0..@r.length
+		print @r[i]
+		print " "
+	end 
 end 
 
 

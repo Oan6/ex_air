@@ -4,30 +4,34 @@
 a = ARGV
 b = ARGV.length
 c = ARGV[0..b-2]
-d = ARGV[b-1]
-#l16 erreur mais l'algo marche quand meme 
-#probleme avec les maj j'arrive pas a downcase 
+d = ARGV[b-1] 
 
-# faire une def pour tout mettre en muniscule 
+@z = []
+def minuscule(nom)
+	for i in nom 
+		@z << i.downcase
+		
+	end 
+end 
+
+minuscule(a)
+
 def elimination(array , string)
-	for i in 0..array.length 
 
-		o = array[i]
-		m = 0 
+	for i in array 
+		m = 0
+		
+		for j in 0..i.length
 
-		for j in 0..o.length
+			if i[j] == string
 
-			if o[j] == string
-
-				m = m+1
+				m = m + 1
 			end 
 		end
 		if m == 0 
 
-			puts array[i]
+			puts i
 		end  
 	end 
-end 		 
-
-
-elimination(c,d)
+end
+elimination(@z,d)

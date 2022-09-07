@@ -6,7 +6,7 @@
 a = ARGV
 
 def rotation(array)
-	for i in 1..array.length
+	for i in 1..array.length-1
 		print array[i]
 		print " "
 	end 

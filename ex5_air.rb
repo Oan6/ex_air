@@ -2,7 +2,7 @@
 #en évitant les caractères identiques adjacents.
 
 
-entre = ARGV.to_s 
+entre = ARGV[0].to_s 
 @sortie = []
 for i in 0..entre.length
 	if entre[i] != entre[i+1]
@@ -10,7 +10,7 @@ for i in 0..entre.length
 	end
 end
 
-for i in  2..@sortie.length-3 #pour enlever le ["     "]
+for i in  0..@sortie.length #pour enlever le ["     "]
 	print @sortie[i] 
 end 
 
